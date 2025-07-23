@@ -119,8 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // === INICIALIZAÇÃO ===
   console.log('GPEVIM - Script carregado com sucesso!');
   
-  // Inicializa funcionalidades opcionais
-  initThemeToggle();
+ 
 });
 
 
