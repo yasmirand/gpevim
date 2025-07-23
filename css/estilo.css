@@ -181,10 +181,11 @@
       border-top: 1px solid #eee;
       padding-top: 10px;
     }
-    #ft{
-      width: 80%;
-      padding-left: 20%;
-      
+    #ft {
+      display: block;           /* Torna a imagem um elemento de bloco */
+      margin: 30px auto;        /* Centraliza horizontalmente e adiciona espaço vertical */
+      max-width: 100%;          /* Garante que não ultrapasse o container */
+      height: auto;             /* Mantém a proporção da imagem */
     }
     /* RODAPÉ */
     footer {
@@ -197,6 +198,21 @@
     }
 
     /* RESPONSIVIDADE */
+
+    @media (max-width: 768px) {
+      #ft {
+        margin: 20px auto;
+       
+      }
+    }
+
+    @media (max-width: 480px) {
+      #ft {
+        margin: 15px auto;
+        
+      }
+    }
+
     @media (max-width: 768px) {
       .menu-toggle {
         display: block;
