@@ -123,22 +123,23 @@
     }
 
     .members-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      display: flex;
+      flex-wrap: wrap;
       gap: 25px;
-      justify-items: center;
+      justify-content: center;
+      align-items: stretch;
       margin-bottom: 40px;
     }
 
     .member-card {
-      width: 100%;
-      max-width: 300px;
-      border: 1px solid #ccc;
-      padding: 20px;
-      border-radius: 10px;
-      text-align: center;
-      background-color: #fefefe;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: 300px;
+    min-width: 280px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #fefefe;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
     .member-image {
@@ -275,6 +276,7 @@
 
       .member-card {
         max-width: 100%;
+        min-width: auto;
       }
     }
 
@@ -305,36 +307,6 @@
       .navbar a:hover,
       .navbar a:focus {
         background-color: #000;
-        color: #fff;
-      }
-    }
-
-    /* Suporte para modo escuro */
-    @media (prefers-color-scheme: dark) {
-      body {
-        background-color: #1a1a1a;
-        color: #e0e0e0;
-      }
-
-      header,
-      .navbar,
-      footer {
-        background-color: #2d2d2d;
-        border-color: #444;
-      }
-
-      .member-card {
-        background-color: #2d2d2d;
-        border-color: #444;
-      }
-
-      .navbar a {
-        color: #e0e0e0;
-      }
-
-      .navbar a:hover,
-      .navbar a:focus {
-        background-color: #404040;
         color: #fff;
       }
     }
