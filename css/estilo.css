@@ -302,11 +302,4 @@
       }
     }
 
-    /* Melhor contraste para acessibilidade */
-    @media (prefers-contrast: high) {
-      .navbar a:hover,
-      .navbar a:focus {
-        background-color: #000;
-        color: #fff;
-      }
-    }
+    
