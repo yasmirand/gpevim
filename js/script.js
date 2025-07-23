@@ -88,20 +88,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // === MODO ESCURO/CLARO (OPCIONAL) ===
-  function initThemeToggle() {
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    
-    // Escuta mudanças na preferência do sistema
-    prefersDark.addEventListener('change', (e) => {
-      if (e.matches) {
-        document.body.classList.add('dark-mode');
-      } else {
-        document.body.classList.remove('dark-mode');
-      }
-    });
-  }
-
   // === PERFORMANCE E OTIMIZAÇÕES ===
   
   // Debounce para evento de resize
